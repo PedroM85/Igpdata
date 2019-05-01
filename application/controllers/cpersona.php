@@ -9,7 +9,7 @@ class Cpersona extends CI_Controller
         parent::__Construct();
         $this->load->model('mpersona');        
         $this->load->model('musuario'); 
-        //$this->load->library('encrypt');      
+        $this->load->library('encryption');      
     }
 
     public function index(){
@@ -22,7 +22,7 @@ class Cpersona extends CI_Controller
        $param['email'] = $this->input->post('email');       
        $param['Fcreation'] = $this->input->post('fecha');       
        $paramusu['nomUser'] = $this->input->post('user');
-       $paramusu['passUser'] = $this->input->post('pass');
+       $paramusu['passUser'] = $this->encryption->encrypt($this->input->post('pass'));
       
        
        $lastid = $this->mpersona->guardar($param);      
