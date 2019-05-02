@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
         <title> Carga de Persona </title>
-</head>
-<body>
-        <h1> Datos Personas</h1>
         <form action="<?php echo base_url(); ?>cpersona/guardar" method="POST">
             <Table>
                 <tr>
@@ -37,5 +31,3 @@
             </table>
         </form>
         <a href="<?php echo base_url();?>clogin">Loguearse </a>
-</body>
-</html>
