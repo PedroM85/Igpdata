@@ -43,5 +43,22 @@ class Cpersona extends CI_Controller
             
         }
         
+        redirect('cpersona/index');
+    }
+
+    public function actualizar(){
+        $param['nombre'] = $this->input->post('Nombre');
+        $param['apellido'] = $this->input->post('Apellido');
+        $param['email'] = $this->input->post('email');
+
+        $this->mpersona->actualizar($param);
+
+        redirect('cpersona/index');
+    }
+
+    public function eliminar(){
+       $idP = $this->input->post('txteliminar');
+       $this->musuario->eliminar($idP);
+       $this->mpersona->eliminar($idP);
     }
 }

@@ -19,4 +19,17 @@ class Musuario extends CI_Model
 
         $this->db->insert('tbl_usuario', $campos);
     }
+    public function eliminar($idP){
+        //hay 2 forma de eliminar
+        //primera
+        // $campos => array(
+        //     'idpersona' = $idP
+        // );
+ 
+        // $this->db->delete('persona',$campos);
+         
+        //seguna
+        $this->db->where('iduser',$idP);
+        $this->db->delete('tbl_usuario');
+    }
 }
