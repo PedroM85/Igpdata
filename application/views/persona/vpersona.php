@@ -36,5 +36,6 @@
                 </tr>
             </table>
         </form>
+        <a href="<?php echo base_url();?>clogin">Loguearse </a>
 </body>
 </html>
