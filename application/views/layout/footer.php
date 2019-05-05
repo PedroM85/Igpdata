@@ -1,4 +1,6 @@
 </div>
+  <!-- /.content -->
+</div>
   <!-- /.content-wrapper -->
   <footer class="main-footer">
     <div class="pull-right hidden-xs">
@@ -48,5 +50,10 @@
 <script src="<?php echo base_url();?>assets/dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="<?php echo base_url();?>assets/dist/js/demo.js"></script>
+
+<!--Script del proyecto -->
+<?php if($this->uri->segment(1)=='ccircuitos/vcircuitos') {?>
+        <script src="<?php echo base_url(); ?>js/circuito.js"></script>
+<?php  }?>
 </body>
 </html>

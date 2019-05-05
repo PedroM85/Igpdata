@@ -1,3 +1,4 @@
+<div class="row">
 <div class="col-md-12">
     <div class="box box-info">
         <div class="box-header with-border">
@@ -24,7 +25,9 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <button type="submit" class="btn btn-info">Actualizar</button>
+                        <div class="col-sm-10 pull-right">
+                            <button type="submit" class="btn btn-primary">Actualizar</button>
+                        </div>
                     </div>
             </form>
 
@@ -37,12 +40,15 @@
                         </div>
                     </div>            
                     <div class="form-group">
-                        <button type="submit" class="btn btn-danger">Eliminar</button>
+                        <div class="col-sm-10 pull-right">
+                            <button type="submit" class="btn btn-danger">Eliminar</button>
+                        </div>     
                     </div> 
                </div>
             </form>
             </div>
         </div>
     </div>
+</div>
 </div>
 

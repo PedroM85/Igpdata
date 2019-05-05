@@ -14,7 +14,8 @@ class Mpersona extends CI_Model
             'nombre' => $param['nombre'],
             'apellido' => $param['apellido'],
             'email' => $param['email'],
-            'Fcreation' => $param['Fcreation']            
+            'Fcreation' => $param['Fcreation'],
+            'Act' => $param[1]            
         );
 
         $this->db->insert('tbl_persona', $campos);

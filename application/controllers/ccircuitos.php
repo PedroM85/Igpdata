@@ -11,7 +11,10 @@ class Ccircuitos extends CI_Controller
     }
 
     public function index(){
-        $this->load->view('Circuitos/vCircuitos');
+        $this->load->view('layout/header');
+        $this->load->view('layout/menu');
+        $this->load->view('Circuitos/vcircuitos');
+        $this->load->view('layout/footer');
     }
     
     public function guardar(){
@@ -25,6 +28,8 @@ class Ccircuitos extends CI_Controller
        $param['Fcreation'] = $this->input->post("fecha");
         
        $this->mcircuito->guardar($param);
+
+       redirect('cpersona/index'); 
 
     }
 }

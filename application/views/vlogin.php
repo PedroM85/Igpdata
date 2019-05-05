@@ -71,7 +71,7 @@
     <!-- /.social-auth-links -->
 
     <a href="#">I forgot my password</a><br>
-    <a href="register.html" class="text-center">Register a new membership</a>
+    <a href="<?php echo base_url(); ?>clogin/login" class="text-center">Register a new membership</a>
     <h1><?php echo $mensaje; ?></h1>
   </div>
   <!-- /.login-box-body -->
