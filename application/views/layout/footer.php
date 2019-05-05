@@ -52,8 +52,8 @@
 <script src="<?php echo base_url();?>assets/dist/js/demo.js"></script>
 
 <!--Script del proyecto -->
-<?php if($this->uri->segment(1)=='ccircuitos/vcircuitos') {?>
-        <script src="<?php echo base_url(); ?>js/circuito.js"></script>
+<?php if($this->uri->segment(1)=='ccircuitos') {?>
+        <script src="<?php echo base_url();?>js/circuito.js"></script>
 <?php  }?>
 </body>
 </html>

@@ -9,7 +9,7 @@ class Cpersona extends CI_Controller
         parent::__Construct();
         $this->load->model('mpersona');        
         $this->load->model('musuario'); 
-        $this->load->library('encryption');      
+       // $this->load->library('encryption');      
     }
 
     public function index(){

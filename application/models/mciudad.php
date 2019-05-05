@@ -11,7 +11,9 @@ class Mciudad extends CI_Model
     }
 
     public function getCiudades($s){
-        $s = $this->db->get_where('tbl_ciudad', array('sitReg' => '$s'));
-        return $s -> $result();
+        $s = $this->db->get_where('tbl_ciudad', array('sitReg' => $s));
+       
+        return $s -> $resultado();
     }
 }
+?>
