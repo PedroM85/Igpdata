@@ -39,7 +39,7 @@ class Clogin extends CI_Controller
         if ($res == 1) {
             $this->load->view('layout/header');
             $this->load->view('layout/menu');
-            $this->load->view('persona/vupdpersona');
+            $this->load->view('vindex');
             $this->load->view('layout/footer');
 
         }else{

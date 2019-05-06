@@ -24,4 +24,9 @@ class Mcircuito extends CI_Model
 
         $this->db->insert('tbl_circuitos', $campos);
     }
+
+    public function getCircuito(){
+        $this->db->select('');
+
+        }
 }

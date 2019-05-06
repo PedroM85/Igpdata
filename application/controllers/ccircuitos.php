@@ -7,6 +7,7 @@ class Ccircuitos extends CI_Controller
     function __Construct()
     {
         parent::__Construct();
+        $this->load->library('session');
         $this->load->model('mcircuito');       
     }
 
@@ -31,5 +32,8 @@ class Ccircuitos extends CI_Controller
 
        redirect('cpersona/index'); 
 
+    }
+    public function getCircuito(){
+        echo json_encode($this->mcircuito->getCircuito());
     }
 }

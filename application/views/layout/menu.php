@@ -34,7 +34,7 @@
             </a>
           <ul class="treeview-menu">
             <li class="active"><a href="<?php echo base_url(); ?>cpersona/"><i class="fa fa-circle-o"></i> Registro Persona</a></li>
-            <li><a href="index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
+            <li class="active"><a href="<?php echo base_url(); ?>cpersona/sa2"><i class="fa fa-circle-o"></i> Actualizar datos </a></li>
           </ul>
         </li>
 

@@ -18,7 +18,7 @@
                         <div class="form-group">
                             <label for="inputEmail3" class="col-sm-2 control-label">Ciudad Circuito</label>
                             <div class="col-sm-10">                        
-                            <td><select class="form-control">
+                            <td><select id="cbociudad" class="form-control">
                                     <option value="">Elija</option>
                                 </select></td>
                             </div>
@@ -88,6 +88,26 @@
                         </div>
                 </form>
 
+                <br><br><br><br>
+                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i> </button>
+                <div class="col-sm-8"> 
+                    <div class="box box-primary"> 
+                        <table class="table table-bordered">
+                            <tr>
+                                <th style="width: 10px">#</th>
+                                <th>Task</th>
+                                <th>Progress</th>
+                                <th>Progress</th>
+                                <th>Progress</th>
+                                <th>Progress</th>
+                                <th>Progress</th>
+                                <th>Progress</th>
+                                <th>Progress</th>
+                            </tr>
+                                                   
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

@@ -8,7 +8,8 @@ class Cpersona extends CI_Controller
     {
         parent::__Construct();
         $this->load->model('mpersona');        
-        $this->load->model('musuario'); 
+        $this->load->model('musuario');
+        $this->load->library('session'); 
        // $this->load->library('encryption');      
     }
 
@@ -18,6 +19,14 @@ class Cpersona extends CI_Controller
        $this->load->view('layout/menu');
        $this->load->view('persona/vpersona');
        $this->load->view('layout/footer');
+      
+    }
+
+    public function sa2(){
+        $this->load->view('layout/header');
+        $this->load->view('layout/menu');
+        $this->load->view('persona/vupdpersona');
+        $this->load->view('layout/footer');
     }
     
     private function hash($paramusu)
@@ -58,6 +67,7 @@ class Cpersona extends CI_Controller
         $this->mpersona->actualizar($param);
 
         redirect('cpersona/index');
+        
     }
 
     public function eliminar(){
