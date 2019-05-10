@@ -21,11 +21,11 @@ class Ccircuitos extends CI_Controller
     public function guardar(){
        $param['circuito'] = $this->input->post("Circuito");
        $param['vueltas'] = $this->input->post("Vueltas");
-       $param['suspension'] = $this->input->post("Suspencion");
+       $param['suspension'] = $this->input->post("Suspension");
        $param['altucoche'] = $this->input->post("altura");
        $param['nivelaleron'] = $this->input->post("alerones");
        $param['pits'] = $this->input->post("pits");
-       $param['compa'] = $this->input->post("compatibildiad");
+       $param['compa'] = $this->input->post("compatibilidad");
        $param['Fcreation'] = $this->input->post("fecha");
         
        $this->mcircuito->guardar($param);
@@ -33,7 +33,7 @@ class Ccircuitos extends CI_Controller
        redirect('cpersona/index'); 
 
     }
-    public function getCircuito(){
-        echo json_encode($this->mcircuito->getCircuito());
+    public function getCircuitos(){
+        echo json_encode($this->mcircuito->getCircuitos());
     }
 }

@@ -35,7 +35,7 @@
                     </div>
                     <div class="box-body">
                         <div class="form-group">
-                            <label for="inputEmail3" class="col-sm-2 control-label">Suspencion</label>
+                            <label for="inputEmail3" class="col-sm-2 control-label">Suspension</label>
                             <div class="col-sm-10">
                             <input type="text"  name="Suspencion" class="form-control" id="inputEmail3" placeholder="Suspencion">
                             </div>
@@ -67,7 +67,7 @@
                     </div>
                     <div class="box-body">
                         <div class="form-group">
-                            <label for="inputEmail3" class="col-sm-2 control-label">compatibildiad</label>
+                            <label for="inputEmail3" class="col-sm-2 control-label">compatibilidad</label>
                             <div class="col-sm-10">
                             <input type="text"  name="compatibildiad" class="form-control" id="inputEmail3" placeholder="compatibildiad">
                             </div>
@@ -89,22 +89,37 @@
                 </form>
 
                 <br><br><br><br>
-                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i> </button>
-                <div class="col-sm-8"> 
+                <button type="button" id="btnGetCircuitos" class="btn btn-flat"><i class="fa fa-search"></i> &nbsp;Buscar </button>
+
+                <div class="col-sm-10"> 
                     <div class="box box-primary"> 
-                        <table class="table table-bordered">
+                        <table id="tblCircuitos" class="table table-bordered">
                             <tr>
                                 <th style="width: 10px">#</th>
-                                <th>Task</th>
-                                <th>Progress</th>
-                                <th>Progress</th>
-                                <th>Progress</th>
-                                <th>Progress</th>
-                                <th>Progress</th>
-                                <th>Progress</th>
-                                <th>Progress</th>
+                                <th>Circuito</th>
+                                <th>Pais</th>
+                                <th>Vueltas</th>
+                                <th>Suspension</th>
+                                <th>Altura del Coche</th>
+                                <th>Nivel de Alerones</th>
+                                <th>Pits</th>
+                                <th>compatibilidad</th>
                             </tr>
                                                    
+                        </table>
+
+                        <table>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
                         </table>
                     </div>
                 </div>
