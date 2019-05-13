@@ -36,6 +36,7 @@ class Cpersona extends CI_Controller
     }
 
     public function guardar(){
+        //base de datoas ----->>>>>       datos de la vista
        $param['nombre'] = $this->input->post('Nombre');
        $param['apellido'] = $this->input->post('Apellido');
        $param['email'] = $this->input->post('email');       
