@@ -59,7 +59,7 @@
         <script src="<?php echo base_url();?>js/circuito.js"></script>
 <?php  }?>
 <?php if($this->uri->segment(1)=='cciudad') {?>
-        <script src="<?php echo base_url();?>js/circuito.js"></script>
+        <script src="<?php echo base_url();?>js/ciudad.js"></script>
 <?php  }?>
 <?php if($this->uri->segment(1)=='cpuntos') {?>
         <script src="<?php echo base_url();?>js/puntos.js"></script>

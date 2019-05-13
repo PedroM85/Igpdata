@@ -20,4 +20,11 @@ class Cciudad extends CI_Controller
 
         echo json_encode($result);
     }
+    
+    public function index(){
+        $this->load->view('layout/header');
+        $this->load->view('layout/menu');
+        $this->load->view('ciudad/vciudad');
+        $this->load->view('layout/footer');
+    }
 }

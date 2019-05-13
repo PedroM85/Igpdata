@@ -7,7 +7,7 @@ $.post(baseurl+"cpuntos/getPuntos",
             $('#tblCircuitos tbody').append(
                 '<tr class="filapunto">'+
                 '    <td>1</td>                                                                                        '+
-                '    <td><div class="alum" id="'+item.idPersona+'"></div>'+item.alumno+'</td>                                                                          '+
+                '    <td><div class="alum" id="'+item.idpersona+'"></div>'+item.alumno+'</td>                                                                          '+
                 '    <td><input type="text" value="'+item.a+'" style="'+estilo+'" maxlength="2" class="punto1"></td>   '+
                 '    <td><input type="text" value="'+item.b+'" style="'+estilo+'" maxlength="2" class="punto2"></td>   '+
                 '    <td><input type="text" value="'+item.c+'" style="'+estilo+'" maxlength="2" class="punto3"></td>   '+
@@ -92,14 +92,27 @@ $.post(baseurl+"cpuntos/getPuntos",
 
         $('#btngrabar').click(function(){
             var i = 0;
+            // var idper = '.alum:eq';
+            // var n1 = '.punto1:eq';
+            
             $('#tblCircuitos .filapunto').each(function(){
-                var idper =$('.alum:eq('+i+')').attr('id');
-                var n1 =$('.punto1:eq('+i+')').val();
-                var n2 =$('.punto2:eq('+i+')').val();
-                var n3 =$('.punto3:eq('+i+')').val();
-                var n4 =$('.punto4:eq('+i+')').val();
-                var nf =$('.puntofinal:eq('+i+')').val();
+                var idper = $('.alum:eq('+i+')').attr('id');
+                var n1 = $('.punto1:eq('+i+')').val();
+                var n2 = $('.punto2:eq('+i+')').val();
+                var n3 = $('.punto3:eq('+i+')').val();
+                var n4 = $('.punto4:eq('+i+')').val();
+                var nf = $('.puntofinal:eq('+i+')').val();
                 
+
+                //para no repetir datos se puede agragar otro post con una funcion eliminar por ID
+                // $.post(baseurl+"cpuntos/elimunar",
+                // {
+
+                // },
+                // function(data){
+
+                // });
+
                 $.post(baseurl+"cpuntos/grabarpunto",
                 {
                     idper:idper,
@@ -110,11 +123,12 @@ $.post(baseurl+"cpuntos/getPuntos",
                     nf:nf
                 },
                 function(data){
-                    alert(data);
+                    //alert(data);
                 });
             
             i++;
                 
             });
-          alert(data);
+            
+          alert('Saliendo del btngrabar');
         });

@@ -1,6 +1,29 @@
+<!-- <div class="box" >
+    <div  class="box-header">
+        <h3 class="box-title class="col-sm-10"">Striped Full Width Table</h3>
+    </div>
+   
+    <div class="box-body no-padding">
+        <table id="tblCircuitos" class="table table-striped">
+        <tr>
+            <th style="width: 10px">#</th>
+            <th style="width: 60px">Alumno</th>
+            <th style="width: 10px">1B</th>
+            <th style="width: 10px">2B</th>
+            <th style="width: 10px">3B</th>
+            <th style="width: 10px">4B</th>
+            <th style="width: 10px">Final</th>  
+        </tr>
+
+        </table>
+    </div>
+</div> -->
+
+
+
 <div class="col-sm-10"> 
     <div class="box box-primary"> 
-        <table id="tblCircuitos" class="table table-bordered">
+        <table id="tblCircuitos" class="table  table-striped">
             <tr>
                 <th style="width: 10px">#</th>
                 <th style="width: 60px">Alumno</th>

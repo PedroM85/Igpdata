@@ -24,12 +24,20 @@ class Cpuntos extends CI_controller
 
     public function grabarpunto(){
         //base de datos ---->>>>    vista
-        $param['idPersona'] = $this->input->post('idper');
-        $param['1B'] = $this->input->post('n1');
-        $param['2B'] = $this->input->post('n2');
-        $param['3B'] = $this->input->post('n3');
-        $param['4B'] = $this->input->post('n4');
-        $param['puntofinal'] = $this->input->post('nf');
+        // $param['idpersona'] = $this->input->post('idper');
+        // $param['1B'] = $this->input->post('n1');
+        // $param['2B'] = $this->input->post('n2');
+        // $param['3B'] = $this->input->post('n3');
+        // $param['4B'] = $this->input->post('n4');
+        // $param['puntofinal'] = $this->input->post('nf');
+
+        $param['idper'] = $this->input->post('idper');
+        $param['n1'] = $this->input->post('n1');
+        $param['n2'] = $this->input->post('n2');
+        $param['n3'] = $this->input->post('n3');
+        $param['n4'] = $this->input->post('n4');
+        $param['nf'] = $this->input->post('nf');
+
 
         $this->mpuntos->grabarpunto($param);
     }

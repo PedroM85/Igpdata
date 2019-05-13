@@ -35,6 +35,7 @@
           <ul class="treeview-menu">
             <li class="active"><a href="<?php echo base_url(); ?>cpersona/"><i class="fa fa-circle-o"></i> Registro Persona</a></li>
             <li class="active"><a href="<?php echo base_url(); ?>cpersona/sa2"><i class="fa fa-circle-o"></i> Actualizar datos </a></li>
+            <li class="active"><a href="<?php echo base_url(); ?>cciudad/index"><i class="fa fa-circle-o"></i> Mesa </a></li>
           </ul>
         </li>
 
