@@ -52,6 +52,19 @@
           </ul>
         </li> 
 
+        <li class="treeview active">
+          <a href="#">
+            <i class="fa fa-edit"></i> <span>Forms</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li class="active"><a href="<?php echo base_url(); ?>cupload/"><i class="fa fa-circle-o"></i> Subir y Bajar Archivo</a></li>
+         
+          </ul>
+        </li>
+
     </section>
     <!-- /.sidebar -->
 </aside>

@@ -30,7 +30,7 @@ $('#btnGrabar').click(function(){
     $('#listcuidades .clsnombreCiudad').each(function(){
         var nc = $('.clsnombreCiudad:eq('+i+')').val();
         i++;
-        alert(nc);
+        //alert(nc);
 
         //implementar el guardado 
         $.post("grabarciudad",
