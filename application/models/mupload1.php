@@ -1,14 +1,14 @@
 <?php
 if (!defined('BASEPATH'))
-    exit('No direct script access allowed');
+    exit('No Direct script access allowed');
 
 class Mupload extends CI_Model {
 
     public function construct() {
         parent::__construct();
     }
-    
-    //FUNCIÓN PARA INSERTAR LOS DATOS DE LA IMAGEN SUBIDA
+
+    //Funcion para insertar los datos de la imagen subida
     function subir($titulo,$imagen)
     {
         $data = array(

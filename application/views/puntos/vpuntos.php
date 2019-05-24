@@ -20,7 +20,7 @@
 </div> -->
 
 
-
+<div>
 <div class="col-sm-10"> 
     <div class="box box-primary"> 
         <table id="tblCircuitos" class="table  table-striped">
@@ -57,3 +57,4 @@
 <script type="text/javascript">
     var baseurl = "<?php echo base_url();?>";
 </script>
+</div>
