@@ -36,6 +36,22 @@ class Mpersona extends CI_Model
         return 1;
     }
 
+    public function getPersona(){
+		$this->db->select('nombre, apellido, email');
+		$this->db->from('tbl_persona');
+		$query = $this->db->get();
+					
+		return $query;
+	}
+
+	public function getPersonas(){
+		$this->db->select('nombre,edad');
+		$this->db->from('persona');
+		$query = $this->db->get();
+					
+		return $query->result();
+	}
+
     public function eliminar($idP){
        //hay 2 forma de eliminar
        //primera

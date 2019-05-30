@@ -75,6 +75,7 @@
           </a>
           <ul class="treeview-menu">
             <li class="active"><a href="<?php echo base_url(); ?>cdownload"><i class="fa fa-circle-o"></i> General</a></li>
+            <li class="active"><a href="<?php echo base_url(); ?>cexcel"><i class="fa fa-circle-o"></i> Exportar Excel</a></li>
            
           </ul>
         </li>
