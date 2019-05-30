@@ -65,6 +65,20 @@
           </ul>
         </li>
 
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-laptop"></i>
+            <span>Download</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li class="active"><a href="<?php echo base_url(); ?>cdownload"><i class="fa fa-circle-o"></i> General</a></li>
+           
+          </ul>
+        </li>
+
     </section>
     <!-- /.sidebar -->
 </aside>
