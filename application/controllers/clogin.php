@@ -15,7 +15,8 @@ class Clogin extends CI_Controller
 
     public function index(){
         $data['mensaje'] = '';
-        $this->load->view('vlogin',$data);
+        //$this->load->view('vlogin',$data);
+        $this->load->view('chartjs/vchartjs');
     }
 
     private function hash($pass)
