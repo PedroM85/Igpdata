@@ -24,4 +24,15 @@ class Mcircuito extends CI_Model
 
         $this->db->insert('tbl_circuitos', $campos);
     }
+
+    public function getCircuitos(){
+        $this->db->select('c.circuito,n.ciudad,c.vueltas,c.suspension,c.altucoche,c.nivelaleron,c.pits,c.compa');
+        $this->db->from('tbl_circuitos c');
+        $this->db->join('tbl_ciudad n','n.idCiudad = c.idCiudad');
+
+        $r = $this->db->get();
+
+        return $r->result();
+
+        }
 }

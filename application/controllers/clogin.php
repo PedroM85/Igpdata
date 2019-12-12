@@ -15,7 +15,8 @@ class Clogin extends CI_Controller
 
     public function index(){
         $data['mensaje'] = '';
-        $this->load->view('vlogin',$data);
+        //$this->load->view('vlogin',$data);
+        $this->load->view('chartjs/vchartjs');
     }
 
     private function hash($pass)
@@ -37,13 +38,21 @@ class Clogin extends CI_Controller
         $res = $this->mlogin->ingresar($usu,$pass);
 
         if ($res == 1) {
-            $this->load->view('persona/vupdpersona');
+            $this->load->view('layout/header');
+            $this->load->view('layout/menu');
+            $this->load->view('vindex');
+            $this->load->view('layout/footer');
+
         }else{
             $data['Mensaje'] = 'Usuario o Contraseña Erronea!';
             $this->load->view('vlogin',$data);
             
             
         }
+    }
+
+    public function login(){
+        $this->load->view('persona/vpersona');
     }
 
 }

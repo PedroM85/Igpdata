@@ -7,24 +7,33 @@ class Ccircuitos extends CI_Controller
     function __Construct()
     {
         parent::__Construct();
+        $this->load->library('session');
         $this->load->model('mcircuito');       
     }
 
     public function index(){
-        $this->load->view('Circuitos/vCircuitos');
+        $this->load->view('layout/header');
+        $this->load->view('layout/menu');
+        $this->load->view('Circuitos/vcircuitos');
+        $this->load->view('layout/footer');
     }
     
     public function guardar(){
        $param['circuito'] = $this->input->post("Circuito");
        $param['vueltas'] = $this->input->post("Vueltas");
-       $param['suspension'] = $this->input->post("Suspencion");
+       $param['suspension'] = $this->input->post("Suspension");
        $param['altucoche'] = $this->input->post("altura");
        $param['nivelaleron'] = $this->input->post("alerones");
        $param['pits'] = $this->input->post("pits");
-       $param['compa'] = $this->input->post("compatibildiad");
+       $param['compa'] = $this->input->post("compatibilidad");
        $param['Fcreation'] = $this->input->post("fecha");
         
        $this->mcircuito->guardar($param);
 
+       redirect('cpersona/index'); 
+
+    }
+    public function getCircuitos(){
+        echo json_encode($this->mcircuito->getCircuitos());
     }
 }

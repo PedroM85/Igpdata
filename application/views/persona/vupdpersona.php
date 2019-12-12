@@ -1,28 +1,54 @@
+<div class="row">
+<div class="col-md-12">
+    <div class="box box-info">
+        <div class="box-header with-border">
+            <h3 class="box-title"><?php echo "Usuario: ".$this->session->userdata('s_usuario');?></h3>
+                     
+            <form action="<?php echo base_url();?>cpersona/actualizar" method="POST" class="form-horizontal">
+                <div class="box-body">
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">Nombre</label>
+                        <div class="col-sm-10">
+                        <input type="text"  name="Nombre" class="form-control" id="inputEmail3" placeholder="Nombre">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-2 control-label">Apellido</label>
+                        <div class="col-sm-10">
+                        <input type="text"   name="Apellido" class="form-control" id="inputPassword3" placeholder="Apellido">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-2 control-label">Email</label>
+                        <div class="col-sm-10">
+                        <input type="email"  name="email" class="form-control" id="inputPassword3" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-10 pull-right">
+                            <button type="submit" class="btn btn-primary">Actualizar</button>
+                        </div>
+                    </div>
+            </form>
 
-<html>
-<head>
-    <title></title>
-</head>
-<body>
+            <form action="<?php echo base_url();?>cpersona/eliminar" method="POST" class="form-horizontal">
+                <div class="box-body">                
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">Nombre</label>
+                        <div class="col-sm-10">
+                        <input type="text" name="txteliminar" class="form-control" id="inputEmail3" placeholder="Nombre">
+                        </div>
+                    </div>            
+                    <div class="form-group">
+                        <div class="col-sm-10 pull-right">
+                            <button type="submit" class="btn btn-danger">Eliminar</button>
+                        </div>     
+                    </div> 
+               </div>
+            </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
 
-    <form action="<?php echo base_url();?>cpersona/actualizar" method="POST">
-        <?php echo "Usuario: ".$this->session->userdata('s_usuario');?>
-
-        <h3>Actualiza Datos</h3>
-
-        <input type="text" name="Nombre" placeholder="Nombre"></input><br><br>
-        <input type="text" name="Apellido" placeholder="Apellido"></input><br><br>
-        <input type="email" name="email" placeholder="Direccion de correo"></input><br><br>
-        <input type="submit" value="Actualizar">
-    </form>
-
-    <form action="<?php echo base_url();?>cpersona/eliminar" method="POST">
-    
-        <h3>Eliminar por ID</h3>
-
-        <input type="text" name="txteliminar" placeholder="ID"></input><br><br>
-        <input type="submit" value="Eliminar">
-    </form>
-
-</body>
-</html>
